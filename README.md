@@ -13,7 +13,10 @@ https://adoptium.net/temurin/releases/
 + Sort by Java version 8/11/17
 
 
-# Tested with Create: Above & Beyond v1.3 for Minecraft 1.16.5 and Forge 36.2.20
+# Tested with Create: Above & Beyond v1.3
+> Minecraft 1.16.5
+> Forge 36.2.20
+> I added mods rubidium (performance), oculus (shaders), oauth (refresh game session without having to reboot game) 
 
 ## Client
 MultiMC 5
