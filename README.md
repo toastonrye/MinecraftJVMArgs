@@ -44,5 +44,7 @@ pause
 ```
 
 # MISC References
+> Links are in no particular order, just a mix of posts I found interesting when trying to understand java arguments...
 + https://old.reddit.com/r/feedthebeast/comments/5jhuk9/modded_mc_and_memory_usage_a_history_with_a/
 + https://www.reddit.com/r/feedthebeast/comments/r24zg4/upgrade_your_java_to_one_that_has_the_shenandoah/
++ https://www.reddit.com/r/feedthebeast/comments/lgfr7m/minecraft_forge_jvm_flags_for_high_performance/
