@@ -2,9 +2,9 @@
 My attempt at organizing java arguments because I always forget and spend hours Googling...
 
 > Note:
-> I don't have a great understanding of these settings, I've copied and pasted them from various places
-> I've tried to reference where I found the settings
-> These settings may or may not work for you, from what I've read, there is no setting that works amazing for every system...
+> + I don't have a great understanding of these settings, I've copied and pasted them from various places
+> + I've tried to reference where I found the settings
+> + These settings may or may not work for you, from what I've read, there is no setting that works amazing for every system...
 
 
 # Tested with Create: Above & Beyond v1.3 for Minecraft 1.16.5 and Forge 36.2.20
