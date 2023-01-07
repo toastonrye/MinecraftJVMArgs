@@ -42,3 +42,7 @@ https://www.reddit.com/r/feedthebeast/comments/lgfr7m/minecraft_forge_jvm_flags_
 "C:\Program Files\Eclipse Adoptium\jdk-11.0.17.8-hotspot\bin\java.exe" -XX:+UseG1GC -Xmx8G -Xms8G -Dsun.rmi.dgc.server.gcInterval=600000 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32 -jar forge-1.16.5-36.2.20.jar --nogui
 pause
 ```
+
+# MISC References
++ https://old.reddit.com/r/feedthebeast/comments/5jhuk9/modded_mc_and_memory_usage_a_history_with_a/
++ https://www.reddit.com/r/feedthebeast/comments/r24zg4/upgrade_your_java_to_one_that_has_the_shenandoah/
