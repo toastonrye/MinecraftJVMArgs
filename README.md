@@ -19,6 +19,8 @@ https://aikar.co/2018/07/02/tuning-the-jvm-g1gc-garbage-collector-flags-for-mine
 ## Server
 The contents of my run.bat to start the server
 https://www.reddit.com/r/feedthebeast/comments/lgfr7m/minecraft_forge_jvm_flags_for_high_performance/
+> My "server" is a Windows 10 PC I use as a home media system. It helps a lot running a server on a 2nd machine, even if it's not a great server..
+> + Aspire TC-875: i5-10400, 2.9GHz, 16GB
 ```sh
 "C:\Program Files\Eclipse Adoptium\jdk-11.0.17.8-hotspot\bin\java.exe" -XX:+UseG1GC -Xmx8G -Xms8G -Dsun.rmi.dgc.server.gcInterval=600000 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32 -jar forge-1.16.5-36.2.20.jar --nogui
 pause
