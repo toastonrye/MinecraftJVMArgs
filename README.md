@@ -21,6 +21,8 @@ https://aikar.co/2018/07/02/tuning-the-jvm-g1gc-garbage-collector-flags-for-mine
 + MultiMC handles the Xmx and Xms flags elsewhere, so I dropped some of the flags below, see the url to aikar's website for the full setting
 + The java installation path set in MultiMC: C:/Program Files/Java/jre1.8.0_202/bin/javaw.exe
   +   Adoptium jdk 1.8.0_352 x64 https://adoptium.net/temurin/releases/
++   For the Xmx/Xms I have it set to 10gb for both, from what I've read they should be the same
+  + My system is 32GB
 ```sh
 -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true
 ```
