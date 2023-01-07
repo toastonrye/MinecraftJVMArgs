@@ -18,6 +18,9 @@ https://adoptium.net/temurin/releases/
 ## Client
 MultiMC 5
 https://aikar.co/2018/07/02/tuning-the-jvm-g1gc-garbage-collector-flags-for-minecraft/
++ MultiMC handles the Xmx and Xms flags elsewhere, so I dropped some of the flags below, see the url to aikar's website for the full setting
++ The java installation path set in MultiMC: C:/Program Files/Java/jre1.8.0_202/bin/javaw.exe
+  +   Adoptium jdk 1.8.0_352 x64 https://adoptium.net/temurin/releases/
 ```sh
 -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true
 ```
@@ -29,6 +32,7 @@ https://www.reddit.com/r/feedthebeast/comments/lgfr7m/minecraft_forge_jvm_flags_
   + Aspire TC-875: i5-10400, 2.9GHz, 16GB
 + For some reason I used Java 11 on the server (Windows x64)
   + https://adoptium.net/temurin/releases/  
++ I have so many java versions installed on the server, instead of calling just "java" in the bat file below, I reference the exact location of the right java.exe version 
 ```sh
 "C:\Program Files\Eclipse Adoptium\jdk-11.0.17.8-hotspot\bin\java.exe" -XX:+UseG1GC -Xmx8G -Xms8G -Dsun.rmi.dgc.server.gcInterval=600000 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32 -jar forge-1.16.5-36.2.20.jar --nogui
 pause
